@@ -16,7 +16,13 @@ export default function RootStack() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Overview">
-        <Stack.Screen name="Overview" component={Overview} />
+        <Stack.Screen
+          name="Overview"
+          component={Overview}
+          options={{
+            headerTitle: 'Lista',
+          }}
+        />
         <Stack.Screen
           name="Details"
           component={Details}
